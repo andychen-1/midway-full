@@ -15,7 +15,7 @@
 
 * 不可缺省的安装
   + 安装 Nodejs (>= 18.0)
-  + 安装 MySQL 详细内容参见 [mysql8_usage.zh-CN.md][./docs/mysql8_usage.zh-CN.md]
+  + 安装 MySQL, 详细内容参见 [mysql8_usage.zh-CN.md](./docs/mysql8_usage.zh-CN.md)
 * 推荐安装
   + 包管理工具推荐使用 pnpm (8.12.1)
   + IDE 推荐使用 Visual Studio Code (version 1.85.1)
