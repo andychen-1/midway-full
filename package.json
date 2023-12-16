@@ -1,8 +1,7 @@
 {
-  "name": "my-midway-esm-project",
+  "name": "midway-full-react",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "Full-stack Development Practice Based on Midway.js + Vite + Vike + React + Antd",
   "type": "module",
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
@@ -86,8 +85,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://gitee.com/pro_chen_y/midway-full-react"
   },
-  "author": "anonymous",
+  "author": "pro_coolme@163.com",
   "license": "MIT"
 }
