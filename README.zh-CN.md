@@ -1,5 +1,13 @@
 # Midway Full React
 
+> MidwayFull 是一个基于 Midwayjs + Vite + Vike + React + Antd 试验性的全栈项目，主要工作将围绕如何简化开发流程，快速开发一个B端应用而展开。
+
+> MidwayFull 项目的灵感来自于 [Midway Hooks](https://midwayjs.org/docs/hooks/builtin-hooks), 通过 Midway Hooks 可动态生成前端可用的 API 模块, 有效缓解前后端对接中出现的协同问题，但美中不足的是， Midwayjs 没有提供成熟的前后端融合方案，例如在现有框架中引入 react 或 vue 等当下流行的前端架构，包括使用 development 与 production 两种模式。[Vite server-middlewaremode](https://cn.vitejs.dev/config/server-options.html#server-middlewaremode) 的出现，有效地解决了 node web 容器中(koa)启动前端框架的问题。 除此之外，[vike][vike] 提供的基于 [Vite](https://cn.vitejs.dev/guide/ssr.html) 的SSR 方案能消除 SPA 的一些痛点。例如加载性能与 SEO，甚至是响应速度也会随着应用体积的增大而降低。此外，得益于前后端融合，应用中可以更好地使用 Midway Security 组件来加固应用的安全性，例如 xss 与 csrf 防护。
+
+> 下一步，将使用 [TypeScript AST Parser](https://jordimarimon.github.io/ts-ast-parser/overview/) 来生成前端 API。由于 Typescript 的类型化处理，生成的前端API模块可直接查看其方法原型，将节省部分关于接口对接的工作开销。
+
+> 当然也不能无限制地夸大全栈开发的好处，学习成本与无法分解的工作量，将使开发者感受到很大的工作压力。由于前后端的耦合，也大大降低了后端接口的可复用性，使得应用的横向拆分变得更为复杂
+
 ## 快速入门
 
 <!-- 在此次添加使用文档 -->
@@ -10,6 +18,7 @@
 * [Vite 文档][vite]
 * [Vike 文档][vike]
 * [React18 文档][react18]
+* [Ant Design 5.0][antd5]
 
 ### 开发环境
 
@@ -56,6 +65,7 @@ $ npm start
 [vite]: https://cn.vitejs.dev/guide/
 [vike]: https://vike.dev/
 [react18]: https://zh-hans.react.dev/
+[antd5]: https://ant-design.antgroup.com/index-cn
 
 ## 框架与模块
 
