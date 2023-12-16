@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/mwts/",
+  "ignorePatterns": ["node_modules", "web", "web@dist", "dist", "test", "typings"],
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "node/no-unpublished-import": "off"
+  }
+}

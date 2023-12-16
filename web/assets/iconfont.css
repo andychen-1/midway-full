@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4335758 */
+  src: url('./fonts/iconfont.woff2?t=1700226081040') format('woff2')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mf-login:before {
+  content: "\e603";
+}
+
+.icon-mf-user:before {
+  content: "\e602";
+}
+
+.icon-mf-password:before {
+  content: "\e601";
+}

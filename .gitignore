@@ -1,19 +1,24 @@
+# logs
 logs/
 npm-debug.log
 yarn-error.log
+
+# package management tools
 node_modules/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-coverage/
+
+# build output
 dist/
 web@dist/
-.vscode/
-.idea/
-run/
+vite.config.ts.timestamp*
+
+# macOS 
 .DS_Store
 *.sw*
 *.un~
+
+# Typescript build info
 .tsbuildinfo
 .tsbuildinfo.*
-vite.config.ts.timestamp*
