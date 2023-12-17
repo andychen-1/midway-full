@@ -97,11 +97,4 @@ declare module '@midwayjs/core/dist/interface.js' {
  */
 export interface IUserOptions {
   userId: string;
-  pwdHash?: string;
-}
-
-export interface IRedirectRecorderOpts {
-  loginPage?: string;
-  refererName?: string;
-  returnUrl?: string;
 }

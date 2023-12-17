@@ -19,6 +19,7 @@
     "antd": "^5.11.2",
     "art-template": "^4.13.2",
     "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
     "crypto-js": "^4.2.0",
     "joi": "^17.11.0",
     "koa-compress": "^5.1.1",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@ant-design/static-style-extract": "^1.0.2",
     "@midwayjs/mock": "^3.12.0",
+    "@types/bcrypt": "^5.0.2",
     "@types/crypto-js": "^4.2.1",
     "@types/koa": "^2.13.4",
     "@types/koa-mount": "^4.0.5",
@@ -70,7 +72,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./bootstrap.js",
     "dev": "cross-env NODE_ENV=local mwtsc --watch --run @midwayjs/mock/app",
-    "front:dev": "cross-env NODE_ENV=local mwtsc && cross-env NODE_ENV=development node ./bootstrap.js",
+    "dev:front": "cross-env NODE_ENV=local mwtsc && cross-env NODE_ENV=development node ./bootstrap.js",
     "prebuild-antd-styles": "cd web && ts-node ./scripts/buildAntd5Styles.tsx",
     "test": "cross-env NODE_ENV=unittest mocha",
     "cov": "cross-env c8 --all --reporter=text --reporter=lcovonly npm run test",

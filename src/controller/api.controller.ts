@@ -24,13 +24,9 @@ export class APIController {
     @Body('password', [ParseStringPipe]) password: string
   ) {
     const { sessionUserProperty, userProperty } = this.passConfig;
+    delete this.ctx.session[sessionUserProperty];
 
-    this.ctx.session[sessionUserProperty] = {};
-    const user = await this.userService.getUser({
-      userId: username,
-      pwdHash: password,
-    });
-    if (user && user.userId === username) {
+    if (true === (await this.userService.verifyUser(username, password))) {
       this.ctx.session[sessionUserProperty] = { [userProperty]: username };
       this.ctx.rotateCsrfSecret();
       return {

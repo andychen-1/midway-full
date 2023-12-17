@@ -2,7 +2,7 @@ export default Page
 
 import CryptoJS from 'crypto-js'
 import axios from 'axios'
-import { Card, Flex, Button, Form, Input, notification } from 'antd'
+import { Alert, Card, Flex, Button, Form, Input, notification } from 'antd'
 
 import WaveSvg from './wave.svg?react'
 import Logo from '~/assets/images/logo.svg?react'
@@ -89,6 +89,7 @@ function LoginForm() {
           </Button>
         </Form.Item>
       </Form>
+      <Alert type="info" description="默认登陆凭证: admin/admin123" />
     </>
   )
 }
