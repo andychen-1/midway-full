@@ -1,8 +1,8 @@
 ## 使用 MySQL8
 
-* [MySQL8.0 安装][https://zhuanlan.zhihu.com/p/463660768]
-* [Midway 数据存储 TypeORM][https://midwayjs.org/docs/extensions/orm]
-* [TypeORM 官方文档][https://typeorm.io/]
+* [MySQL8.0 安装](https://zhuanlan.zhihu.com/p/463660768)
+* [Midway 数据存储 TypeORM](https://midwayjs.org/docs/extensions/orm)
+* [TypeORM 官方文档](https://typeorm.io/)
 
 ### 数据库操作
 ```bash
