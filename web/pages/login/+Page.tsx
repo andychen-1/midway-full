@@ -81,7 +81,7 @@ function LoginForm() {
           <Input prefix={<i className="iconfont icon-mf-user" />} placeholder="用户名" />
         </Form.Item>
         <Form.Item name="password" rules={[{ required: true, message: '请输入密码' }]}>
-          <Input.Password prefix={<i className="iconfont icon-mf-password" />} placeholder="密码" />
+          <Input.Password prefix={<i className="iconfont icon-mf-password" />} placeholder="密码" autoComplete='new_password' />
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" className="login-form-button">

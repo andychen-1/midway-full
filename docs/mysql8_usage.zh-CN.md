@@ -92,6 +92,8 @@ export default {
 import { Provide, Singleton } from '@midwayjs/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
+import { compare } from 'bcrypt';
+
 import { Users } from '../entities/Users.entity.js';
 import { IUserOptions } from '../interface.js';
 
@@ -106,6 +108,22 @@ export class UserService {
       where: options,
       select: ['userId', 'email', 'userName'],
     });
+  }
+
+  async verifyUser(userId: string, password: string) {
+    const user = await this.usersModel.findOne({
+      where: { userId },
+    });
+
+    if (user) {
+      const result = await compare(password, user.pwdHash);
+      if (true === result) {
+        user.lastLogin = new Date();
+        this.usersModel.save(user);
+        return true;
+      }
+    }
+    return false;
   }
 }
 ```
