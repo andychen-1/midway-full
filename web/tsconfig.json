@@ -4,14 +4,22 @@
     "module": "ES2020",
     "target": "ES2020",
     "moduleResolution": "Bundler",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client"
+    ],
     "jsx": "react-jsx",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "paths": {
-      "~/*": ["./*"]
-    }
+      "~/*": [
+        "./*"
+      ]
+    },
   },
   "ts-node": {
     "transpileOnly": true,
@@ -20,5 +28,9 @@
       "module": "Node16",
       "moduleResolution": "Node16"
     }
-  }
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx"],
+  "exclude": [
+    "node_modules"
+  ]
 }

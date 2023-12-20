@@ -12,9 +12,6 @@ export class APIController {
   @Config('passport')
   passConfig: any;
 
-  @Config('redirectRecorder.refererName')
-  refererName: string;
-
   @Inject()
   userService: UserService;
 
